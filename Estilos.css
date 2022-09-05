@@ -1,13 +1,13 @@
 * {
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
 
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+}
+html{
+  scroll-behavior: smooth;
 }
 h1 {
   font-size: 3.5em;
@@ -51,6 +51,7 @@ button:hover {
 
 header {
   background-color: rgb(245, 245, 245);
+  z-index: 99;
 }
 
 header .logo {
@@ -65,6 +66,7 @@ header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 header nav {
@@ -126,17 +128,22 @@ header a:hover {
 /*
 GRUPO
 */
-#Grupo {
-  margin: 30px 0 15px 0;
-  text-align: center;
-}
 
 .Grupo_titulo {
   padding-top: 140px;
+  text-align: center;
+
+}
+#Grupo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 .centrar {
+  display: contents;
+  place-items: center;
   margin: 0%;
-  display: flex;
   flex-direction: row;
   padding-top: 10px;
   padding-bottom: 300px;
@@ -224,7 +231,7 @@ GRUPO
 }
 
 /*
-NUESTROS PROGRAMAS
+PERFILES OPUS
 */
 
 #nuestros-programas {
